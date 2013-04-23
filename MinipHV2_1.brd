@@ -141,6 +141,7 @@
 <text x="19.558" y="8.128" size="0.6096" layer="21">I2C pH Interface</text>
 <text x="23.876" y="7.112" size="0.6096" layer="21">Ver 0.1</text>
 <rectangle x1="17.78" y1="5.842" x2="27.178" y2="8.89" layer="22" rot="R180"/>
+<rectangle x1="14.986" y1="5.842" x2="17.78" y2="8.89" layer="22"/>
 </plain>
 <libraries>
 <library name="SparkysWidgets">
@@ -3639,13 +3640,13 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U$2" library="SparkysWidgets" package="BNC" value="BNCPTH" x="11.43" y="13.97" smashed="yes" rot="R90"/>
 <element name="IC4" library="SparkysWidgets" package="SO08" value="TL072" x="12.192" y="19.558" smashed="yes" rot="MR0"/>
 <element name="IC5" library="SparkysWidgets" package="SOT23-DBV" value="TPS60400DBV" x="4.318" y="14.732" smashed="yes" rot="MR270"/>
-<element name="R7" library="SparkysWidgets" package="0805" value="47K" x="15.494" y="12.7" smashed="yes" rot="MR0">
-<attribute name="NAME" x="18.542" y="13.0175" size="0.4064" layer="26" rot="MR0"/>
-<attribute name="VALUE" x="18.542" y="12.319" size="0.4064" layer="28" rot="MR0"/>
+<element name="R7" library="SparkysWidgets" package="0805" value="47K" x="15.494" y="11.176" smashed="yes" rot="MR0">
+<attribute name="NAME" x="18.542" y="11.4935" size="0.4064" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="18.542" y="10.795" size="0.4064" layer="28" rot="MR0"/>
 </element>
-<element name="R8" library="SparkysWidgets" package="0805" value="220K" x="15.494" y="14.224" smashed="yes" rot="MR180">
-<attribute name="NAME" x="18.796" y="14.7955" size="0.4064" layer="26" rot="MR0"/>
-<attribute name="VALUE" x="18.796" y="14.097" size="0.4064" layer="28" rot="MR0"/>
+<element name="R8" library="SparkysWidgets" package="0805" value="220K" x="15.494" y="12.7" smashed="yes" rot="MR180">
+<attribute name="NAME" x="18.796" y="13.2715" size="0.4064" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="18.796" y="12.573" size="0.4064" layer="28" rot="MR0"/>
 </element>
 <element name="R9" library="SparkysWidgets" package="0805" value="220K" x="8.382" y="24.384" smashed="yes" rot="MR90">
 <attribute name="NAME" x="7.366" y="25.4635" size="0.4064" layer="26" rot="MR0"/>
@@ -3659,9 +3660,9 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="15.494" y="24.1935" size="0.4064" layer="25"/>
 <attribute name="VALUE" x="15.494" y="23.495" size="0.4064" layer="27"/>
 </element>
-<element name="C9" library="SparkysWidgets" package="0805" value=".1uF" x="15.494" y="11.176" smashed="yes" rot="MR0">
-<attribute name="NAME" x="18.542" y="11.2395" size="0.4064" layer="26" rot="MR0"/>
-<attribute name="VALUE" x="18.542" y="10.541" size="0.4064" layer="28" rot="MR0"/>
+<element name="C9" library="SparkysWidgets" package="0805" value=".1uF" x="15.494" y="14.224" smashed="yes" rot="MR0">
+<attribute name="NAME" x="18.542" y="14.2875" size="0.4064" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="18.542" y="13.589" size="0.4064" layer="28" rot="MR0"/>
 </element>
 <element name="R12" library="SparkysWidgets" package="0805" value="3K" x="10.414" y="25.4" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.192" y="23.8125" size="0.4064" layer="25" rot="R180"/>
@@ -3870,9 +3871,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="10.922" y1="18.288" x2="11.176" y2="18.542" width="0.254" layer="16"/>
 <wire x1="11.176" y1="18.542" x2="13.208" y2="18.542" width="0.254" layer="16"/>
 <wire x1="13.208" y1="18.542" x2="13.462" y2="18.288" width="0.254" layer="16"/>
-<wire x1="13.716" y1="14.224" x2="14.594" y2="14.224" width="0.254" layer="16"/>
-<wire x1="14.594" y1="12.7" x2="14.594" y2="14.224" width="0.254" layer="16"/>
 <wire x1="14.594" y1="11.176" x2="14.594" y2="12.7" width="0.254" layer="16"/>
+<wire x1="14.594" y1="12.7" x2="14.594" y2="14.224" width="0.254" layer="16"/>
+<wire x1="14.594" y1="14.224" x2="13.716" y2="14.224" width="0.254" layer="16"/>
 <wire x1="14.594" y1="14.224" x2="15.494" y2="14.224" width="0.254" layer="16"/>
 </signal>
 <signal name="N$10">
@@ -3880,21 +3881,15 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="IC4" pad="1"/>
 <contactref element="R9" pad="1"/>
 <contactref element="R8" pad="2"/>
-<wire x1="16.394" y1="11.176" x2="16.394" y2="9.536" width="0.254" layer="16"/>
-<wire x1="16.394" y1="9.536" x2="15.494" y2="8.636" width="0.254" layer="16"/>
-<via x="15.494" y="8.636" extent="1-16" drill="0.6"/>
-<wire x1="15.494" y1="8.636" x2="15.494" y2="16.51" width="0.254" layer="1"/>
-<via x="15.494" y="16.51" extent="1-16" drill="0.6"/>
-<wire x1="15.494" y1="16.51" x2="15.24" y2="16.764" width="0.254" layer="16"/>
-<wire x1="14.097" y1="16.958" x2="15.046" y2="16.958" width="0.254" layer="16"/>
-<wire x1="15.046" y1="16.958" x2="15.494" y2="16.51" width="0.254" layer="16"/>
-<wire x1="16.394" y1="14.224" x2="16.394" y2="15.61" width="0.254" layer="16"/>
-<wire x1="16.394" y1="15.61" x2="15.494" y2="16.51" width="0.254" layer="16"/>
 <wire x1="14.097" y1="16.958" x2="14.097" y2="18.669" width="0.254" layer="16"/>
 <wire x1="14.097" y1="18.669" x2="13.716" y2="19.05" width="0.254" layer="16"/>
 <wire x1="13.716" y1="19.05" x2="9.652" y2="19.05" width="0.254" layer="16"/>
 <wire x1="9.652" y1="19.05" x2="8.382" y2="20.32" width="0.254" layer="16"/>
 <wire x1="8.382" y1="20.32" x2="8.382" y2="23.484" width="0.254" layer="16"/>
+<wire x1="16.394" y1="12.7" x2="16.394" y2="14.224" width="0.254" layer="16"/>
+<wire x1="16.394" y1="14.224" x2="16.394" y2="15.864" width="0.254" layer="16"/>
+<wire x1="16.394" y1="15.864" x2="15.3" y2="16.958" width="0.254" layer="16"/>
+<wire x1="14.097" y1="16.958" x2="15.3" y2="16.958" width="0.254" layer="16"/>
 </signal>
 <signal name="-5V">
 <contactref element="IC4" pad="4"/>
