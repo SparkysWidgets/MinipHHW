@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="100" unitdist="mil" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -83,16 +83,21 @@
 <layer number="109" name="fp9" color="7" fill="1" visible="no" active="yes"/>
 <layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
@@ -119,6 +124,8 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
@@ -2814,7 +2821,6 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <wire x1="264.16" y1="46.99" x2="260.35" y2="46.99" width="0.1" layer="94"/>
 <wire x1="264.16" y1="180.34" x2="196.215" y2="180.34" width="0.3" layer="94"/>
 <wire x1="196.215" y1="180.34" x2="132.08" y2="180.34" width="0.3" layer="94"/>
-<wire x1="132.08" y1="180.34" x2="67.945" y2="180.34" width="0.3" layer="94"/>
 <wire x1="67.945" y1="180.34" x2="0" y2="180.34" width="0.3" layer="94"/>
 <wire x1="260.35" y1="176.53" x2="196.215" y2="176.53" width="0.1" layer="94"/>
 <wire x1="196.215" y1="176.53" x2="132.08" y2="176.53" width="0.1" layer="94"/>
@@ -2826,7 +2832,7 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <wire x1="0" y1="133.35" x2="0" y2="90.17" width="0.3" layer="94"/>
 <wire x1="132.08" y1="0" x2="196.215" y2="0" width="0.3" layer="94"/>
 <wire x1="264.16" y1="90.17" x2="264.16" y2="133.35" width="0.3" layer="94"/>
-<wire x1="196.215" y1="180.34" x2="67.945" y2="180.34" width="0.3" layer="94"/>
+<wire x1="132.08" y1="180.34" x2="67.945" y2="180.34" width="0.3" layer="94"/>
 <text x="0.6" y="153.635" size="2.61" layer="94">A</text>
 <text x="0.6" y="110.455" size="2.61" layer="94">B</text>
 <text x="0.6" y="67.275" size="2.61" layer="94">C</text>
@@ -2859,7 +2865,6 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <text x="98.7075" y="177.13" size="2.61" layer="94">2</text>
 <text x="162.8425" y="177.13" size="2.61" layer="94">3</text>
 <text x="226.9775" y="177.13" size="2.61" layer="94">4</text>
-<frame x1="0" y1="0" x2="264.16" y2="180.34" columns="4" rows="4" layer="94"/>
 </symbol>
 <symbol name="DOCFIELD">
 <wire x1="0.0127" y1="0.0127" x2="71.12" y2="0" width="0.254" layer="94"/>
@@ -5350,7 +5355,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </device>
 </devices>
 </deviceset>
-<deviceset name="FRAME_SW_LOGO_CC_BY_SA">
+<deviceset name="FRAME_MINIPH">
 <description>&lt;h4&gt;A4 Sparky's Widgets frame&lt;/h4&gt;
 &lt;p&gt;
 This is a standard A4 Frame, the Doc Field has been modified with our Logo and contains the license and extra project information!
@@ -5363,8 +5368,8 @@ This is a standard A4 Frame, the Doc Field has been modified with our Logo and c
 <device name="" package="SWPCBLOGOWITHINFO">
 <technologies>
 <technology name="">
-<attribute name="PROJECT" value="I2C ADC Breakout with vRef" constant="no"/>
-<attribute name="URL1" value="/Projects.aspx" constant="no"/>
+<attribute name="PROJECT" value="Mini pH I2C pH Interface" constant="no"/>
+<attribute name="URL1" value="/portfolio-item/miniph-i2c-ph-interface/" constant="no"/>
 <attribute name="URLHOME" value="http://www.sparkyswidgets.com" constant="no"/>
 <attribute name="URLPROJECT" value="http://www.sparkyswidgets.com" constant="no"/>
 </technology>
@@ -6568,7 +6573,10 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="SJ1" library="SparkFun" deviceset="SOLDERJUMPER" device="NC2"/>
-<part name="U$4" library="SparkysWidgets" deviceset="FRAME_SW_LOGO_CC_BY_SA" device=""/>
+<part name="U$4" library="SparkysWidgets" deviceset="FRAME_MINIPH" device="">
+<attribute name="PROJECT" value="Mini pH I2C pH Interface"/>
+<attribute name="URL1" value="/portfolio-item/miniph-i2c-ph-interface/"/>
+</part>
 <part name="U$5" library="SparkysWidgets" deviceset="CC-BY-SA" device=""/>
 </parts>
 <sheets>
