@@ -47,4 +47,4 @@ License Info
 <p>This is a fully open source project released under the CC BY license</p>
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width: 0px;" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br />
 <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">MinipH</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="www.sparkyswidgets.com" property="cc:attributionName" rel="cc:attributionURL">Ryan Edwards, Sparky's Widgets</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.<br />
-Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="/portfolio-item/leophi-usb-arduino-ph-sensor/" rel="dct:source">http://www.sparkyswidgets.com/portfolio-item/leophi-usb-arduino-ph-sensor/</a>
+Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="/portfolio-item/leophi-usb-arduino-ph-sensor/" rel="dct:source">http://www.sparkyswidgets.com/portfolio-item/miniph-i2c-ph-interface/</a>
