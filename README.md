@@ -22,6 +22,7 @@ Board Layout Info
 
 - Standard 2.54mm pitch header and Grove style connector
 - Guard ring on pH input stage, care must be taken in layout here
+- Added back in solder bridge jumper to select if Vref should be used or not (Its an expensive BurrBrown guy and really only needed for super sensitive use)
 
 
 Errata
